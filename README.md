@@ -61,7 +61,7 @@ image_script
 - The script file (parse_snap_json.sh)
 
 
-STEP 5: GO TO THE FOLDER IN TERMINAL
+## STEP 5: GO TO THE FOLDER IN TERMINAL
 
 Copy and paste this line into Terminal and press Enter:
 
