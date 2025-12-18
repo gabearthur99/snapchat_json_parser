@@ -34,16 +34,20 @@ A window with text will open.
 
 Copy and paste this entire line into Terminal, then press Enter:
 
+``` bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
 
 Follow the on-screen instructions.
 
 
-STEP 3: INSTALL REQUIRED TOOLS (ONE TIME ONLY)
+## STEP 3: INSTALL REQUIRED TOOLS (ONE TIME ONLY)
 
 After Homebrew finishes installing, copy and paste this line and press Enter:
 
+``` bash
 brew install jq exiftool imagemagick
+```
 
 This may take a few minutes.
 
@@ -65,14 +69,18 @@ image_script
 
 Copy and paste this line into Terminal and press Enter:
 
+``` bash
 cd ~/Desktop/image_script
+```
 
 
 ## STEP 6: ALLOW THE SCRIPT TO RUN
 
 Copy and paste this line and press Enter:
 
+``` bash
 chmod +x parse_snap_json.sh
+```
 
 This only needs to be done once.
 
@@ -81,9 +89,11 @@ This only needs to be done once.
 
 Copy and paste this line and press Enter:
 
-./parse_snap_json.sh saved_media.json
+``` bash 
+./parse_snap_json.sh memories_history.json
+```
 
-If your JSON file has a different name, replace saved_media.json with the correct name.
+If your JSON file has a different name, replace memories_history.json with the correct name.
 
 
 ## STEP 8: FIND YOUR IMAGES
@@ -91,7 +101,9 @@ If your JSON file has a different name, replace saved_media.json with the correc
 1. Open the image_script folder on your Desktop
 2. A new folder called:
 
+``` bash
 downloaded_media
+```
 
 will appear
 3. Your images and videos are inside this folder
@@ -101,7 +113,9 @@ will appear
 
 You should see messages in Terminal like:
 
+```
 Saved image: downloaded_media/image_2025-08-19__15_37_58.jpg
+```
 
 If you see messages like this, the script ran successfully.
 
@@ -115,7 +129,9 @@ If you see messages like this, the script ran successfully.
 "permission denied"
 Run this again:
 
+``` bash 
 chmod +x parse_snap_json.sh
+```
 
 ## Nothing downloads
 Check that:
@@ -134,6 +150,7 @@ Check that:
 ## RUNNING THE SCRIPT AGAIN
 
 After everything is set up, you only need to run:
-
+``` bash
 cd ~/Desktop/image_script
 ./parse_snap_json.sh saved_media.json
+```
